@@ -19,11 +19,19 @@ function plugin(options) {
         if (err || stats.hasErrors()) {
           console.error(err);
         }
+        console.log("info");
         console.log(info);
 
+        console.log("files");
+        console.log(files);
+
         for (var file in files) {
+          console.log("file");
+          console.log(file);
           files[file].webpackStats = stats;
-        };
+        }
+
+        console.log("webpack done");
 
         done();
       });
