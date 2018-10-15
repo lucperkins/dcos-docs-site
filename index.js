@@ -9,7 +9,6 @@ const watch            = require('metalsmith-watch');
 const branch           = require('metalsmith-branch')
 const serve            = require('metalsmith-serve');
 const redirect         = require('metalsmith-redirect');
-const webpack          = require('metalsmith-webpack2');
 const anchor           = require('markdown-it-anchor');
 const attrs            = require('markdown-it-attrs');
 const timer            = require('metalsmith-timer');
@@ -27,6 +26,7 @@ const inPlace                 = require('./plugins/metalsmith-in-place-dcos');
 const includeContent          = require('./plugins/metalsmith-include-content-dcos');
 const shortcodes              = require('./plugins/metalsmith-shortcodes');
 const wkhtmltopdfLinkResolver = require('./plugins/metalsmith-wkhtmltopdf-link-resolver');
+const webpack                 = require('./plugins/metalsmith-webpack-custom');
 
 // Configs
 const shortcodesConfig = require('./shortcodes');
