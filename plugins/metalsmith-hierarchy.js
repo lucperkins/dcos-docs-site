@@ -176,7 +176,6 @@ function plugin(opts) {
       try {
         return this.findByPath(potentialPath);
       } catch (err) {
-        console.log(potentialPath);
         return null;
       }
     };
